@@ -1,0 +1,29 @@
+<!-- //how to create a new element in the DOM -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Element | DOM </title>
+</head>
+<body>
+    <script>
+        // phele create a ew elemet 
+        const div = document.createElement('div');
+        div.className = 'newDivElement';
+        div.id = 'newDiv';
+        div.setAttribute('title', 'New Div Element');
+        div.style.backgroundColor = 'red';
+        div.style.color = 'white';
+        const addText = document.createTextNode("This is a new Div Element");
+        console.log(div);
+
+        // ab isko DOM me add karna hai
+        div.appendChild(addText); // isse div me text add ho jayega
+        document.body.appendChild(div);    // isse body me div add ho jayega
+
+
+
+    </script>
+</body>
+</html>
